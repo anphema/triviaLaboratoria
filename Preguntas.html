@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <!-- titulo de la pestaña del navegador--> <title>Preguntas</title>
+     <link href="style.css" rel="stylesheet" type="text/css" />
+     
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <!--Link de librería Sweet alert para personalizar las alertas-->
+    
+  </head>
+  <!-- buena practica poner el script hasta arriba-->
+  <script src="preguntas.js"></script>
+    
+  <body>
+    <div class="box">
+      
+      <center>  
+        <h1 id="saludo" class="titulo">¡Hola, </h1>
+        <br>
+        <label class="manuscrita">Veamos cuánto conocimiento mágico posees</label>
+        <br><br>
+        <div class="cronometro">
+          <p class="manuscrita">
+            Tienes <span id="minutos">0</span>:<span id="segundos">30</span> segundos para terminar 
+         </p>
+        </div>
+      </center>
+      <!-- etiqueta que inicia formato de formulario-->
+      <form name="formulario">
+      
+            <br> 
+       <!-- esta etiqueta permite organizar en grupos los campos de un formulario-->
+      <fieldset class="manuscrita">
+       
+           <label>El hechizo de levitación es Wingardium...</label>
+           <br><br>
+           <!-- el tipo radio da lugar a los circulitos-->
+           <input type="radio" name="q1" value="Leviosa"> 
+            
+           Leviosa 
+           <br>
+           <input type="radio" name="q1" value="Leviousa"> Leviousa
+           <br>
+           <!-- Levios&aacute agregar acentos-->
+           <input type="radio" name="q1"value="Leviosá"> Leviosá
+           
+      </fieldset>
+      <br>
+      <fieldset class="manuscrita">
+        <label>¡Te aceptaron en el equipo de quidditch!, ¿con cuántos jugadores más compartirás la victoria?</label>
+        <br><br>
+        <input type="radio" name="q2" value="9"> 9
+        <br>
+        <input type="radio" name="q2" value="10"> 10
+        <br>
+        <input type="radio" name="q2" value="6"> 6
+      </fieldset>
+      <br>
+      <fieldset class="manuscrita">
+        <label>¡Tienes que comprar tu primera varita! ¿Con quién la comprarías?</label>
+        <br><br>
+        <input type="radio" name="q3" value="Jimmy Kiddel"> Jimmy Kiddel
+        <br>
+        <input type="radio" name="q3" value="Violetta"> Violetta Beauvais
+        <br>
+        <input type="radio" name="q3" value="Ollivanders"> Ollivanders
+      </fieldset>
+      <br>
+      <fieldset class="manuscrita">
+        <label>¡Corre! No llegues tarde a clase. ¿Dónde está el aula de pociones en Hogwarts?</label>
+        <br><br>
+        <input type="radio" name="q4" value="En la Torre del Reloj"> En la Torre del Reloj
+        <br>
+        <input type="radio" name="q4" value="En las mazmorras"> En las mazmorras
+        <br>
+        <input type="radio" name="q4" value="En la cuarta planta"> En la cuarta planta 
+      </fieldset>
+      <br>
+      <fieldset class="manuscrita">
+        <label>¿Sospechas que tu pareja te miente?¿Qué poción usarías para que te dijera la verdad? </label>
+        <br><br>
+        <input type="radio" name="q5" value="Poción de aliento de perro"> Poción de aliento de perro
+        <br>
+        <input type="radio" name="q5" value="Veritaserum"> Veritaserum
+        <br>
+        <input type="radio" name="q5" value="Amortentia"> Amortentia
+      </fieldset>
+    </form>
+    
+    
+    <br><center>
+      <!-- se usa etiqueta de tipo boton para volver-->
+    <input type="button" id="validar" value="Checa tus resutados" class="boton">  <!-- se usa etiqueta de tipo boton para validar-->
+    <input type="button" id="volver" value="Volver a jugar" class="boton">
+    
+  </body></center>
+  <br>
+     
+  </body>
+</html>
